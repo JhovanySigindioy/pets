@@ -1,0 +1,23 @@
+npx shadcn@latest add button card input label select sonner
+
+
+CallToAction.jsx
+Footer.jsx
+HeroImage.jsx
+Layout.jsx
+Navbar.jsx
+WelcomeMessage.jsx
+
+
+
+
+About.jsx
+Cart.jsx
+Home.jsx
+Shop.jsx
+Spa.jsx
+
+
+useCartStore.js
+useThemeStore.js
+useUIStore.js
