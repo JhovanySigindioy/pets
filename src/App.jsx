@@ -6,8 +6,11 @@ function App() {
     <>
       <SonnerDemo />
       <h1 className="text-3xl font-bold underline">
-        Hello world!
+        Despliegue de petslovess.com
       </h1>
+      <SonnerDemo />
+      <SonnerDemo />
+      <SonnerDemo />
     </>
   )
 }
