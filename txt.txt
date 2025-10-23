@@ -21,3 +21,6 @@ Spa.jsx
 useCartStore.js
 useThemeStore.js
 useUIStore.js
+
+
+npm i react-router-dom framer-motion axios @tanstack/react-query
