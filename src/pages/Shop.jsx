@@ -34,10 +34,7 @@ const Shop = () => {
 
     const handleAddToCart = (product) => {
         addItem(product);
-        toast({
-            title: "¡Añadido al carrito!",
-            description: `${product.name} ha sido añadido a tu carrito.`,
-        });
+        toast.success(`${product.name} ha sido añadido a tu carrito.`);
     };
 
     return (

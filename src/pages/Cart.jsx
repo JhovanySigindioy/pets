@@ -12,10 +12,7 @@ const Cart = () => {
     const { items, removeItem, updateQuantity, getTotalPrice, clearCart } = useCartStore();
 
     const handleCheckout = () => {
-        toast({
-            title: "¡El pago estará disponible pronto!",
-            description: "Esta funcionalidad aún no está implementada, ¡pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! 🚀",
-        });
+        toast.info("Esta funcionalidad aun esta en desarrollo...");
     };
 
     const handleUpdateQuantity = (id, currentQuantity, change) => {
@@ -27,10 +24,7 @@ const Cart = () => {
 
     const handleRemoveItem = (item) => {
         removeItem(item.id);
-        toast({
-            title: "Eliminado del carrito",
-            description: `${item.name} ha sido eliminado de tu carrito.`,
-        });
+        toast(`${item.name} ha sido eliminado de tu carrito.`);
     };
 
     if (items.length === 0) {
@@ -215,10 +209,7 @@ const Cart = () => {
                                             className="w-full"
                                             onClick={() => {
                                                 clearCart();
-                                                toast({
-                                                    title: "Carrito vaciado",
-                                                    description: "Todos los artículos han sido eliminados de tu carrito.",
-                                                });
+                                                toast.info("Todos los artículos han sido eliminados de tu carrito.");
                                             }}
                                         >
                                             Vaciar Carrito

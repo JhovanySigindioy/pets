@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { toast } from "sonner";
 
 const Spa = () => {
-    const { toast } = useToast();
     const [formData, setFormData] = useState({
         petName: "",
         ownerName: "",
@@ -23,28 +23,25 @@ const Spa = () => {
             icon: Scissors,
             title: "Peluquería Profesional",
             description: "Paquete completo de peluquería con baño, corte de pelo y corte de uñas",
-            price: "$65",
+            price: "$10.999",
         },
         {
             icon: Sparkles,
             title: "Tratamiento de Spa de Lujo",
             description: "Experiencia de spa premium con aromaterapia y masaje",
-            price: "$95",
+            price: "$10.999",
         },
         {
             icon: Heart,
             title: "Chequeo de Bienestar",
             description: "Evaluación de salud y consulta de bienestar",
-            price: "$45",
+            price: "$10.999",
         },
     ];
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        toast({
-            title: "¡El sistema de reservas estará disponible pronto!",
-            description: "Esta funcionalidad aún no está implementada, ¡pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! 🚀",
-        });
+        toast.info("¡El sistema de reservas estará disponible pronto!");
     };
 
     const handleChange = (e) => {

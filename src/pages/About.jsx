@@ -13,10 +13,7 @@ const About = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        toast({
-            title: "¡El formulario de contacto estará disponible pronto!",
-            description: "Esta funcionalidad aún no está implementada, ¡pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! 🚀",
-        });
+        toast.info("¡El formulario de contacto estará disponible pronto!");
     };
 
     const contactInfo = [

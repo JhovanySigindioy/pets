@@ -8,10 +8,7 @@ import { toast } from "sonner";
 const Footer = () => {
     const handleNewsletterSubmit = (e) => {
         e.preventDefault();
-        toast({
-            title: " ¡La suscripción al boletín estará disponible pronto!",
-            description: "Esta funcionalidad aún no está implementada, ¡pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! ",
-        });
+        toast.info("¡La suscripción al boletín estará disponible pronto!");
     };
 
     return (
